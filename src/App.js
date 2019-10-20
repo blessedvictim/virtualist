@@ -1,7 +1,7 @@
 import React, {useState, useRef} from 'react';
 import './App.css';
-import Virtualist from "./Virtualist";
 import faker from "faker"
+import {Virtualist} from "./Virtualist";
 
 function Message(props) {
     let [h, setState] = useState(props.h);
@@ -85,7 +85,8 @@ function App() {
                 <Virtualist
                     cacheId={1}
                     rowRenderer={function ({style, data, reMeasure, deleteElement}) {
-                        return <Message style={style} updateState={() => setState(Math.random())} deleteElement={deleteElement} reMeasure={reMeasure}
+                        return <Message style={style} updateState={() => setState(Math.random())}
+                                        deleteElement={deleteElement} reMeasure={reMeasure}
                                         data={data} key={data.id}/>
                     }}
                     mode={pend}

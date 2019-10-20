@@ -1,8 +1,8 @@
 {
   "name": "virtualist",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.1",
   "author": "BlessedVictim tequila1000@yandex.ru https://github.com/blessedvictim",
+  "main": "main.js",
   "keywords": [
     "Virtual list",
     "list",
@@ -11,13 +11,15 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ashleygwilliams/my_package/issues"
+    "url": "https://github.com/blessedvictim/virtualist/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ashleygwilliams/my_package.git"
+    "url": "https://github.com/blessedvictim/virtualist.git"
   },
   "dependencies": {
+  },
+  "devDependencies": {
     "faker": "^4.1.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",

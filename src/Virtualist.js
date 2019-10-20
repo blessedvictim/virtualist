@@ -1,5 +1,5 @@
 import React, {useCallback, useLayoutEffect, useReducer, useRef} from "react";
-import {createEmptyCacheObject, findFirstIndex, ifThenElse, measureElement} from "./utils";
+import {createEmptyCacheObject, findFirstIndex, measureElement} from "./utils";
 
 const processed = [];
 
@@ -30,7 +30,7 @@ const getCache = (cacheId) => {
         return localCache;
     }
 };
-export default function Virtualist(props) {
+export function Virtualist(props) {
     const {cacheId, data, rowRenderer, computeKey, scrollHandler, resizeClientHandler, resizeContentHandler, updateHandler, listRef} = props;
     const [state, setState] = useReducer(reducer, initialState);
     const _scrollingContainerRef = useRef(null);
