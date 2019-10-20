@@ -1,13 +1,13 @@
 {
   "name": "virtualist",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "BlessedVictim tequila1000@yandex.ru https://github.com/blessedvictim",
-  "main": "main.js",
   "keywords": [
     "Virtual list",
     "list",
     "virtualized",
-    "virtualized list"
+    "virtualized list",
+    "react"
   ],
   "license": "MIT",
   "bugs": {
